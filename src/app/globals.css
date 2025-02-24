@@ -4,5 +4,4 @@
 
 body {
   @apply bg-solid-black text-silver-contrast font-poppins select-none;
-  /* scroll-behavior: smooth !important; */
 }

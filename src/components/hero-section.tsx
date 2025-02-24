@@ -2,10 +2,31 @@
 
 import { motion } from "framer-motion";
 import CursorDot from "./effects/CursorDot";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 
 const letters = "Mursaleen".split("");
 
-export default function Home() {
+export default function HeroSection() {
+  //
+  const words = [
+    {
+      text: "Front-End",
+    },
+    {
+      text: "Developer",
+    },
+    {
+      text: "Crafting",
+    },
+    {
+      text: "Digital",
+    },
+    {
+      text: "Magic.",
+      className: "text-silver-contrast",
+    },
+  ];
+
   return (
     <main className="bg-solid-black text-silver-contrast h-screen">
       {/* Hero Section */}
@@ -55,14 +76,14 @@ export default function Home() {
           </div>
 
           {/* Tagline */}
-          <motion.p
+          <motion.div
             className="mt-6 text-xl md:text-2xl font-medium text-silver-contrast/80 max-w-md mx-auto"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut", delay: 1 }}
           >
-            Front-End Developer Crafting Digital Magic
-          </motion.p>
+            <TypewriterEffectSmooth words={words} />
+          </motion.div>
 
           {/* Orbiting Button */}
           <motion.button

@@ -38,12 +38,26 @@ export default function ContactSection() {
               color: "#fff",
             },
           });
-        else toast.error("Failed to send email. Please try again.");
+        else
+          toast("Failed to send email. Please try again.", {
+            icon: "❌",
+            style: {
+              borderRadius: "10px",
+              background: "#333",
+              color: "#fff",
+            },
+          });
 
         setIsPending(false);
       } catch (error) {
-        console.error("Error:", error);
-        toast.error("An error occurred. Please try again.");
+        toast("An error occurred. Please try again.", {
+          icon: "❌",
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
         setIsPending(false);
       }
     },

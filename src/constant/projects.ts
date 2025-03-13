@@ -7,6 +7,7 @@ import Food from "@/../public/projects/food.png";
 import Gaming from "@/../public/projects/gaming.png";
 import RealState from "@/../public/projects/real state.png";
 import RentACar from "@/../public/projects/rent a car.png";
+import liliPad from "@/../public/projects/lilipad.png";
 
 // Your real projects
 export const projects = [
@@ -73,12 +74,13 @@ export const projects = [
     link: "https://dproduction.vercel.app/",
     image: DProduction.src,
   },
-  // {
-  //   title: "Lilipad",
-  //   description: "A test project exploring creative layouts and animations.",
-  //   tech: ["React", "Tailwind CSS", "Vercel"],
-  //   link: "https://test-project-mu-orpin.vercel.app/",
-  //   image: .src/ },
+  {
+    title: "Lilipad",
+    description: "A test project exploring creative layouts and animations.",
+    tech: ["React", "Tailwind CSS", "Vercel"],
+    link: "https://test-project-mu-orpin.vercel.app/",
+    image: liliPad.src,
+  },
   {
     title: "Gamin App",
     description:

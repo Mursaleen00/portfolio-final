@@ -1,27 +1,55 @@
 "use client";
 
+import { useFormik } from "formik";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import toast from "react-hot-toast";
+
+const initialValues = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
+  const [isPending, setIsPending] = useState<boolean>(false);
+  const formik = useFormik({
+    initialValues,
+    onSubmit: async (values) => {
+      try {
+        const response = await fetch("/api/sendEmail", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+
+        await response.json();
+
+        resetForm();
+
+        if (response.ok)
+          toast("Thanks For Contact", {
+            icon: "🙋🏻‍♂️",
+            style: {
+              borderRadius: "10px",
+              background: "#333",
+              color: "#fff",
+            },
+          });
+        else toast.error("Failed to send email. Please try again.");
+
+        setIsPending(false);
+      } catch (error) {
+        console.error("Error:", error);
+        toast.error("An error occurred. Please try again.");
+        setIsPending(false);
+      }
+    },
   });
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData); // Placeholder for now
-    // Reset form (optional)
-    setFormData({ name: "", email: "", message: "" });
-  };
+  const { values, handleChange, resetForm, handleSubmit } = formik;
 
   return (
     <section
@@ -58,7 +86,7 @@ export default function ContactSection() {
             <input
               type="text"
               name="name"
-              value={formData.name}
+              value={values.name}
               onChange={handleChange}
               placeholder="Your Name"
               className="w-full px-4 py-3 bg-solid-black/80 border border-silver-contrast/30 rounded-lg text-silver-contrast placeholder-silver-contrast/50 focus:border-silver-contrast focus:shadow-[0_0_10px_rgba(192,192,192,0.3)] transition-all duration-300 outline-none"
@@ -75,7 +103,7 @@ export default function ContactSection() {
             <input
               type="email"
               name="email"
-              value={formData.email}
+              value={values.email}
               onChange={handleChange}
               placeholder="Your Email"
               className="w-full px-4 py-3 bg-solid-black/80 border border-silver-contrast/30 rounded-lg text-silver-contrast placeholder-silver-contrast/50 focus:border-silver-contrast focus:shadow-[0_0_10px_rgba(192,192,192,0.3)] transition-all duration-300 outline-none"
@@ -91,7 +119,7 @@ export default function ContactSection() {
           >
             <textarea
               name="message"
-              value={formData.message}
+              value={values.message}
               onChange={handleChange}
               placeholder="Your Message"
               rows={4}
@@ -116,6 +144,7 @@ export default function ContactSection() {
               type: "spring",
               stiffness: 120,
             }}
+            disabled={isPending}
             viewport={{ once: false }}
             className="px-6 py-3 bg-silver-contrast/10 border border-silver-contrast/30 rounded-full text-silver-contrast font-semibold hover:bg-silver-contrast/20 transition-all duration-300"
           >

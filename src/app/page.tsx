@@ -4,9 +4,10 @@ import ContactSection from "@/components/contact";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import ProjectsSection from "@/components/projects";
+import SkillsSection from "@/components/SkillsSection";
 
-import WelcomeScreen from "../components/WelcomeScreen";
 import { useState } from "react";
+import WelcomeScreen from "../components/WelcomeScreen";
 
 export default function Home() {
   const [showPortfolio, setShowPortfolio] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
           <HeroSection />
           <ProjectsSection />
           <AboutSection />
+          <SkillsSection />
           <ContactSection />
           <Footer />
         </main>

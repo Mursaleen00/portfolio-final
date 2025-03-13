@@ -2,19 +2,6 @@
 
 import { motion } from "framer-motion";
 
-// Sample skills (replace with yours)
-const skills = [
-  "HTML",
-  "CSS",
-  "Tailwind CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Framer Motion",
-  "Git",
-];
-
 export default function AboutSection() {
   return (
     <section
@@ -28,7 +15,7 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           About Me
         </motion.h2>
@@ -39,41 +26,13 @@ export default function AboutSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          viewport={{ once: false }}
+          viewport={{ once: true }}
         >
           I’m Mursaleen, a passionate front-end developer who loves crafting
           modern, intuitive, and visually stunning web experiences. With a keen
           eye for design and a knack for code, I bring ideas to life using
           cutting-edge tools and technologies.
         </motion.p>
-
-        {/* Skills */}
-        <motion.div
-          className="mt-10 flex flex-wrap justify-center gap-4"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          viewport={{ once: false }}
-        >
-          {skills.map((skill, index) => (
-            <motion.span
-              key={index}
-              className="px-4 py-2 bg-silver-contrast/10 border border-silver-contrast/20 rounded-full text-silver-contrast font-semibold text-sm hover:bg-silver-contrast/20 hover:shadow-[0_0_10px_rgba(192,192,192,0.3)] transition-all duration-300"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.6,
-                delay: 0.5 + index * 0.1,
-                type: "spring",
-                stiffness: 120,
-              }}
-              whileHover={{ scale: 1.05 }}
-              viewport={{ once: false }}
-            >
-              {skill}
-            </motion.span>
-          ))}
-        </motion.div>
       </div>
 
       {/* Background Accent */}
@@ -82,7 +41,7 @@ export default function AboutSection() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 0.15 }}
         transition={{ duration: 1.5 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
       >
         <div className="absolute top-1/4 left-1/4 w-1 h-32 bg-gradient-to-b from-silver-contrast/40 to-transparent transform -rotate-45 animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-1 h-32 bg-gradient-to-t from-silver-contrast/40 to-transparent transform rotate-45 animate-pulse delay-200" />

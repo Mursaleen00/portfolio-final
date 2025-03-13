@@ -16,11 +16,15 @@ export const categorizedData = {
   ],
   backend: [
     { img: "/skills/nodejs.svg", name: "Nodejs" },
+    { img: "/skills/express.svg", name: "Express" },
+    { img: "/skills/nest.svg", name: "Nextjs" },
+    { img: "/skills/MySQL.svg", name: "MySQL" },
     { img: "/skills/mongodb.svg", name: "Mongodb" },
     { img: "/skills/firebase.svg", name: "Firebase" },
     { img: "/skills/socket-io.svg", name: "Socket-io" },
+    { img: "/skills/nodemailer.webp", name: "Nodemailer" },
     { img: "/skills/jwt.svg", name: "JWT" },
-    { img: "/skills/json.svg", name: "DummyJSON" },
+    { img: "/skills/json.svg", name: "JSON" },
   ],
   tools: [
     { img: "/skills/git.svg", name: "Git" },

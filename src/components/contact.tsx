@@ -50,6 +50,7 @@ export default function ContactSection() {
 
         setIsPending(false);
       } catch (error) {
+        console.log("🚀 ~ onSubmit: ~ error:", error);
         toast("An error occurred. Please try again.", {
           icon: "❌",
           style: {

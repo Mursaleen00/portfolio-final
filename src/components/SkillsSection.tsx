@@ -34,7 +34,7 @@ export default function SkillsSection() {
             Frontend
           </h3>
           <Marquee gradient gradientWidth={200} gradientColor="#1A1A1A">
-            <div className="flex gap-10 items-center pl-6">
+            <div className="flex gap-10 items-center pl-10">
               {categorizedData.frontend.map((item, index) => (
                 <div
                   className="flex flex-col justify-center items-center"
@@ -47,7 +47,7 @@ export default function SkillsSection() {
                     width={48}
                     height={48}
                   />
-                  <h3 className="font-medium text-silver-contrast text-sm text-center mt-2">
+                  <h3 className="font-medium text-silver-contrast capitalize text-sm text-center mt-2">
                     {item.name}
                   </h3>
                 </div>

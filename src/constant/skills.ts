@@ -12,6 +12,7 @@ export const categorizedData = {
     { img: "/skills/next.svg", name: "Next.js" },
     { img: "/skills/vite.svg", name: "Vite.js" },
     { img: "/skills/astro.svg", name: "Astro" },
+    { img: "/skills/react-router.svg", name: "React Router" },
     { img: "/skills/redux.svg", name: "Redux" },
     { img: "/skills/react-query.svg", name: "React Query" },
     { img: "/skills/formik.svg", name: "Formik" },

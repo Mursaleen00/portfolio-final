@@ -46,7 +46,7 @@ export default function AboutSection() {
               <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-silver-contrast/60 via-silver-contrast/30 to-transparent rounded-full" />
 
               <p className="text-lg text-silver-contrast/90 leading-relaxed">
-                Hi, I'm{" "}
+                Hi, I&apos;m{" "}
                 <span className="text-silver-contrast font-semibold">
                   Mursaleen
                 </span>{" "}
@@ -81,8 +81,8 @@ export default function AboutSection() {
               </p>
 
               <p className="text-base text-silver-contrast/75 leading-relaxed mt-4">
-                Whether it's crafting pixel-perfect interfaces, optimizing
-                performance, or solving complex problems, I'm driven by the
+                Whether it&apos;s crafting pixel-perfect interfaces, optimizing
+                performance, or solving complex problems, I&apos;m driven by the
                 challenge of turning ideas into reality. I believe in continuous
                 learning and staying ahead of industry trends to deliver
                 solutions that make a difference.

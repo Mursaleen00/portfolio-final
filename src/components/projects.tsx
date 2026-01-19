@@ -46,7 +46,15 @@ export default function ProjectsSection() {
   );
 }
 
-function ProjectCard({ project, index }: { project: any; index: number }) {
+interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  link: string;
+  image: string;
+}
+
+function ProjectCard({ project, index }: { project: Project; index: number }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (

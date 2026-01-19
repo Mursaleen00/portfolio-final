@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <section
       id="footer"
-      className="min-h-screen flex flex-col items-center justify-center snap-start bg-solid-black text-silver-contrast relative overflow-hidden"
+      className="min-h-screen flex flex-col items-center justify-center bg-solid-black text-silver-contrast relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto px-4 flex flex-col items-center justify-center">
         {/* Gradient Line */}
@@ -39,7 +39,7 @@ export default function Footer() {
           viewport={{ once: false }}
         >
           <motion.a
-            href="https://github.com/mursaleen00" // Replace with your GitHub
+            href="https://github.com/mursaleen00"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, color: "#C0C0C0" }}
@@ -49,7 +49,7 @@ export default function Footer() {
             <FaGithub size={24} />
           </motion.a>
           <motion.a
-            href="https://linkedin.com/in/yourprofile" // Replace with your LinkedIn
+            href="www.linkedin.com/in/mursaleen00"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, color: "#C0C0C0" }}

@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col items-center justify-center snap-start relative overflow-hidden bg-solid-black text-silver-contrast"
+      className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden bg-solid-black text-silver-contrast"
     >
       <div className="relative z-10 text-center">
         <div className="flex justify-center">
@@ -84,6 +84,41 @@ export default function HeroSection() {
           Explore My Work
         </motion.button>
       </div>
+
+      {/* Quick Stats - Different from About section */}
+      <motion.div
+        className="relative z-10 flex gap-8 mt-16 justify-center flex-wrap"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 1.5 }}
+      >
+        <div className="text-center">
+          <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-silver-contrast to-gray-300 bg-clip-text text-transparent">
+            2K+
+          </div>
+          <div className="text-sm text-silver-contrast/60 mt-1">
+            Coding Hours
+          </div>
+        </div>
+        <div className="h-12 w-px bg-silver-contrast/20" />
+        <div className="text-center">
+          <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-silver-contrast to-gray-300 bg-clip-text text-transparent">
+            3K+
+          </div>
+          <div className="text-sm text-silver-contrast/60 mt-1">
+            Total Commits
+          </div>
+        </div>
+        <div className="h-12 w-px bg-silver-contrast/20" />
+        <div className="text-center">
+          <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-silver-contrast to-gray-300 bg-clip-text text-transparent">
+            20+
+          </div>
+          <div className="text-sm text-silver-contrast/60 mt-1">
+            Projects Built
+          </div>
+        </div>
+      </motion.div>
       <motion.div
         className="absolute inset-0 pointer-events-none"
         initial={{ opacity: 0 }}

@@ -9,7 +9,7 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col items-center justify-center snap-start bg-solid-black text-silver-contrast relative overflow-hidden py-12"
+      className="min-h-screen flex flex-col items-center justify-center bg-solid-black text-silver-contrast relative overflow-hidden py-12"
     >
       <div className="relative z-10 text-center max-w-5xl w-full px-4">
         {/* Heading */}

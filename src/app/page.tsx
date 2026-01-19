@@ -19,11 +19,12 @@ export default function Home() {
   return (
     <>
       {!showPortfolio && <WelcomeScreen onComplete={handleWelcomeComplete} />}
+
       {showPortfolio && (
-        <main className="snap-y snap-mandatory overflow-y-scroll h-screen">
+        <main className="overflow-y-scroll h-screen scroll-smooth">
           <HeroSection />
-          <ProjectsSection />
           <AboutSection />
+          <ProjectsSection />
           <SkillsSection />
           <ContactSection />
           <Footer />

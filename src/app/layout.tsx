@@ -1,9 +1,9 @@
+import CursorDot from "@/components/effects/CursorDot";
+import Navbar from "@/components/navbar";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/navbar";
-import CursorDot from "@/components/effects/CursorDot";
 import { Toaster } from "react-hot-toast";
+import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,9 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Mursaleen - Front-End Developer",
   description: "A creative portfolio showcasing front-end mastery.",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
@@ -26,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className={`${poppins.variable} min-h-screen antialiased`}>
+      <body
+        className={`${poppins.variable} min-h-screen antialiased !scroll-smooth`}
+      >
         <Toaster />
         <Navbar />
         <CursorDot />

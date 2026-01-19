@@ -69,7 +69,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center snap-start bg-solid-black text-silver-contrast relative overflow-hidden"
+      className="flex flex-col items-center justify-center bg-solid-black text-silver-contrast relative overflow-hidden min-h-screen"
     >
       <div className="relative z-10 text-center max-w-lg w-full px-4">
         {/* Heading */}

@@ -13,7 +13,7 @@
     "formik": "^2.4.6",
     "framer-motion": "^12.4.7",
     "motion": "^12.4.7",
-    "next": "15.1.7",
+    "next": "15.1.11",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

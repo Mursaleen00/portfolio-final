@@ -16,7 +16,7 @@ export const projects = [
     description:
       "A comprehensive flight compensation platform built with Next.js and TypeScript, helping passengers claim up to €600 for delayed, cancelled, or overbooked flights. Features an intuitive multi-step form with real-time validation, airport search functionality, and seamless document upload integration. The application provides a smooth user experience with responsive design and modern UI patterns.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    link: "https://flight-wiser-claims.vercel.app/",
+    link: "https://flightwiserclaims.com/",
     image: FlightWiserClaims.src,
   },
   {

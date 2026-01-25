@@ -23,7 +23,7 @@ export const categorizedData = {
   backend: [
     { img: "/skills/nodejs.svg", name: "Nodejs" },
     { img: "/skills/express.svg", name: "Express" },
-    { img: "/skills/nest.svg", name: "Nextjs" },
+    { img: "/skills/nest.svg", name: "Nest.js" },
     { img: "/skills/MySQL.svg", name: "MySQL" },
     { img: "/skills/mongodb.svg", name: "Mongodb" },
     { img: "/skills/dbeaver.svg", name: "DBeaver" },
@@ -32,6 +32,7 @@ export const categorizedData = {
     { img: "/skills/nodemailer.webp", name: "Nodemailer" },
     { img: "/skills/jwt.svg", name: "JWT" },
     { img: "/skills/json.svg", name: "JSON" },
+    { img: "/skills/sheety.png", name: "Sheety" },
   ],
   tools: [
     { img: "/skills/powershell.svg", name: "Powershell" },

@@ -5,6 +5,7 @@ import FlightWiserClaims from "@/../public/projects/flight-wiser-claims.png";
 import Food from "@/../public/projects/food.png";
 import Gaming from "@/../public/projects/gaming.png";
 import Haiger from "@/../public/projects/haiger.png";
+import HarmonyHub from "@/../public/projects/harmony-hub.png";
 import RealState from "@/../public/projects/real-state.png";
 import RentACar from "@/../public/projects/rent-a-car.png";
 import Sansa from "@/../public/projects/sasna.png";
@@ -12,10 +13,37 @@ import Sansa from "@/../public/projects/sasna.png";
 // Your real projects
 export const projects = [
   {
+    title: "Flight Wiser - Premium Passenger Claims Platform",
+    description:
+      "A sophisticated and multi-layered web platform designed to streamline and automate air passenger compensation claims. Flight Wiser simplifies the recovery process for flight delays, cancellations, and denied boarding through an intuitive multi-step eligibility checker and secure, encrypted document handling. Featuring a high-performance UI with seamless transitions, the platform leverages deep service integrations—including Google Cloud and Cloudinary—to ensure robust data integrity, real-time claim management, and automated administrative workflows.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "TanStack Query",
+      "Recharts",
+      "Vercel",
+      "Sheety",
+    ],
+    link: "https://mursaleen-admin.vercel.app/",
+    image: HarmonyHub.src,
+  },
+  {
     title: "Flight Wiser Claims",
     description:
       "A comprehensive flight compensation platform built with Next.js and TypeScript, helping passengers claim up to €600 for delayed, cancelled, or overbooked flights. Features an intuitive multi-step form with real-time validation, airport search functionality, and seamless document upload integration. The application provides a smooth user experience with responsive design and modern UI patterns.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    tech: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS 4",
+      "Formik & Yup",
+      "Google Cloud Platform",
+      "Cloudinary",
+      "Nodemailer",
+      "Vercel",
+    ],
     link: "https://flightwiserclaims.com/",
     image: FlightWiserClaims.src,
   },

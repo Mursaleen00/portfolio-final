@@ -10,12 +10,11 @@ import RealState from "@/../public/projects/real-state.png";
 import RentACar from "@/../public/projects/rent-a-car.png";
 import Sansa from "@/../public/projects/sasna.png";
 
-// Your real projects
 export const projects = [
   {
-    title: "Flight Wiser - Premium Passenger Claims Platform",
+    title: "Harmony Hub - Advanced Agency Management Ecosystem",
     description:
-      "A sophisticated and multi-layered web platform designed to streamline and automate air passenger compensation claims. Flight Wiser simplifies the recovery process for flight delays, cancellations, and denied boarding through an intuitive multi-step eligibility checker and secure, encrypted document handling. Featuring a high-performance UI with seamless transitions, the platform leverages deep service integrations—including Google Cloud and Cloudinary—to ensure robust data integrity, real-time claim management, and automated administrative workflows.",
+      "A sophisticated, high-performance administrative platform designed to centralize and automate complex agency workflows. Harmony Hub streamlines client relationships, project lifecycles, and employee performance tracking through an intuitive, data-driven dashboard. Featuring real-time synchronization with Google Sheets via Stein API, a dynamic multi-theme engine, and interactive financial analytics powered by Recharts, the platform delivers a premium user experience focused on operational excellence and enterprise-grade scalability.",
     tech: [
       "React",
       "TypeScript",
@@ -24,8 +23,10 @@ export const projects = [
       "Shadcn UI",
       "TanStack Query",
       "Recharts",
+      "Stein API",
+      "Zod",
+      "React Hook Form",
       "Vercel",
-      "Sheety",
     ],
     link: "https://mursaleen-admin.vercel.app/",
     image: HarmonyHub.src,
